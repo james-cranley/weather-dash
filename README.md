@@ -120,24 +120,18 @@ Use a **system-level service + timer** only.
 ### Create the service
 
 ```bash
-sudo nano /etc/systemd/system/weather-epaper.service
+sudo nano /etc/systemd/system/weather-dash.service
 ```
 
 ```ini
 [Unit]
-Description=Weather e-paper dashboard update
-After=network-online.target
-Wants=network-online.target
+Description=Update weather e-paper display
+After=multi-user.target
 
 [Service]
 Type=oneshot
-User=jjc
-WorkingDirectory=/home/jjc/weather-dash
-ExecStart=/usr/bin/python3 /home/jjc/weather-dash/update_epaper.py \
-  --city Cambridge \
-  --country UK
-Environment=OPENWEATHER_API_KEY=your_api_key_here
-Nice=10
+ExecStartPre=/bin/sleep 10
+ExecStart=/usr/bin/python3 /home/jjc/weather-dash/update_epaper.py --country UK --city Cambridge --api-key 09ef54e2d90606818a63ded609bdad98
 
 [Install]
 WantedBy=multi-user.target
@@ -148,17 +142,16 @@ WantedBy=multi-user.target
 ### Create the timer (every 30 minutes)
 
 ```bash
-sudo nano /etc/systemd/system/weather-epaper.timer
+sudo nano /etc/systemd/system/weather-dash.timer
 ```
 
 ```ini
 [Unit]
-Description=Update weather e-paper every 30 minutes
+Description=Run weather dashboard every 30 minutes
 
 [Timer]
-OnBootSec=3min
+OnBootSec=30s
 OnUnitActiveSec=30min
-Persistent=true
 
 [Install]
 WantedBy=timers.target
