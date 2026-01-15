@@ -1,5 +1,7 @@
 # `weather-dash`
 
+![photo of the epaper display](weather-dash.png)
+
 A minimal, always-on weather dashboard for **e-paper**, designed for very low power usage.
 
 The project fetches current weather from OpenWeather, renders a custom black/red/white dashboard image, and displays it on a Waveshare e-Paper HAT.
