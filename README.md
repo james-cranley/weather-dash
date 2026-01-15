@@ -14,7 +14,7 @@ The project fetches current weather from OpenWeather, renders a custom black/red
 - [**Waveshare 2.13" ePaper Display HAT (B)**](https://thepihut.com/products/three-colour-2-13-eink-display-phat-red-black-white)  
   Red / Black / White, 250×122  
   SKU: WAV-13448
-- **Pi Zero Dongle** (for simple USB power)
+- [**Pi Zero Dongle**](https://thepihut.com/products/solderless-zero-dongle-for-raspberry-pi-zero) (for simple USB power)
 
 ---
 
