@@ -10,7 +10,7 @@ The project fetches current weather from OpenWeather, renders a custom black/red
 
 ## Hardware
 
-- **Raspberry Pi Zero 2W**
+- [**Raspberry Pi Zero 2W**](https://thepihut.com/products/raspberry-pi-zero-2?srsltid=AfmBOootLvdn07v7_yWVf4S9StgBwjaNz1lXNhFWtnTeNFNJfn5xvyxv)
 - **Waveshare 2.13" ePaper Display HAT (B)**  
   Red / Black / White, 250×122  
   SKU: WAV-13448
