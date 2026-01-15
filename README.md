@@ -182,16 +182,5 @@ journalctl -u weather-epaper.service -n 50
 
 ---
 
-## Notes & cautions
-
-- E-paper displays have **finite refresh cycles** — updating every 30 minutes is reasonable.
-- Avoid frequent full refreshes.
-- Keep the OpenWeather API key out of version control.
-- If the display doesn’t update after a fresh OS install, **SPI is almost always the issue**.
-
----
-
-## License
-
-MIT (or your preferred license)
+James Cranley, January 2026
 
