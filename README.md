@@ -133,7 +133,7 @@ After=multi-user.target
 [Service]
 Type=oneshot
 ExecStartPre=/bin/sleep 10
-ExecStart=/usr/bin/python3 /home/jjc/weather-dash/update_epaper.py --country UK --city Cambridge --api-key 09ef54e2d90606818a63ded609bdad98
+ExecStart=/usr/bin/python3 /home/jjc/weather-dash/update_epaper.py --country UK --city Cambridge --api-key YOURAPIKEYHERE
 
 [Install]
 WantedBy=multi-user.target
