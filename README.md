@@ -1,4 +1,4 @@
-# weather-dash
+# `weather-dash`
 
 A minimal, always-on weather dashboard for **e-paper**, designed for very low power usage.
 
